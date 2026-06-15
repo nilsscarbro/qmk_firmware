@@ -78,16 +78,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [1] = LAYOUT(
     HK_SNIP, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                            KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,
-    KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                             KC_6,    KC_EQL,    KC_PLUS,    KC_MINUS,    KC_UNDS,    KC_F12,
+    KC_GRV,  KC_1,    KC_2,    KC_3,    KC_LCBR,    KC_RCBR,                             KC_6,    KC_EQL,    KC_PLUS,    KC_MINUS,    KC_UNDS,    KC_F12,
     _______, UK_TILD, UK_AT,   XXXXXXX, XXXXXXX,  XXXXXXX,                          KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, UK_PIPE,
-    _______, KC_EQL,  KC_MINS, KC_PLUS, KC_LCBR, KC_RCBR, _______,        _______, KC_LBRC, KC_RBRC, KC_SCLN, KC_COLN, UK_BSLS, _______,
+    _______, KC_EQL,  KC_MINS, KC_PLUS, HK_PASTE, XXXXXXX, _______,        _______, KC_LBRC, KC_RBRC, KC_SCLN, KC_COLN, UK_BSLS, _______,
                       _______, _______, _______, _______, _______,        _______, MO(3),   _______, _______, _______
   ),
   [2] = LAYOUT(
-    _______, _______, _______, _______, _______, _______,                          KC_INS, _______, _______, _______, _______ ,LSFT(KC_DEL),
-    _______, _______,  HK_SNIP, KC_APP,  XXXXXXX, XXXXXXX,                          KC_HOME, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, KC_BSPC,
-    _______, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX, KC_CAPS,                          KC_END, KC_LEFT, KC_DOWN, KC_RGHT, KC_DEL,  XXXXXXX,
-    _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), XXXXXXX, _______,        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
+_______, _______, _______, _______, _______, _______,                          HK_START, KC_INS, HK_IMG_PASTE, HK_STRING, _______ ,LSFT(KC_DEL),
+    _______, _______,  HK_SNIP, KC_APP,  XXXXXXX, XXXXXXX,                          HK_END, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX, KC_BSPC,
+    _______, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX, KC_CAPS,                          KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_DEL,  XXXXXXX,
+    _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), XXXXXXX, _______,        KC_END, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
                       _______, _______, _______, MO(3),   _______,        _______, _______, _______, _______, _______
   ),
     [3] = LAYOUT(
