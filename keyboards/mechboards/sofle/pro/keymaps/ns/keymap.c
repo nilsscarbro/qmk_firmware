@@ -60,7 +60,24 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false; // Prevent the original Enter keycode from being sent [1]
             }
             break;
+        // define strings
+
+        // Example of sending a string when a custom keycode is pressed
+        case SS_HELLO:
+            if (record->event.pressed) {
+                SEND_STRING("Hello, world!\n");
+            }
+            return false;
+
+        // parentheses pair
+        case SS_PAREN:
+            if (record->event.pressed) {
+                SEND_STRING("()");
+                tap_code(KC_LEFT); // Move cursor between the parentheses
+            }
+            return false;
     }
+
     return true; // Process all other keys normally [1]
 }
 
