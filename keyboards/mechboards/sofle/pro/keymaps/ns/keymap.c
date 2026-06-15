@@ -23,7 +23,9 @@ const key_override_t *key_overrides[] = {
 };
 
 enum custom_keycodes {
-    SWAP_SP_ENT = SAFE_RANGE
+    SWAP_SP_ENT = SAFE_RANGE,
+    SS_HELLO,
+    SS_PAREN
 };
 
 static bool sp_ent_swapped = false;
